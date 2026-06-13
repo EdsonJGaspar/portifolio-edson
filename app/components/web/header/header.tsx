@@ -3,14 +3,32 @@ import { Logo } from "./nav-bar/logo";
 import { LinkButtom } from "../link-buttom/link-buttom";
 import { LuDownload, LuMenu, LuX } from "react-icons/lu";
 import { MobileNav } from "./nav-bar/menu-mobile";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { DesktopNav } from "./nav-bar/menu-desktop";
 
 export function Header() {
   const [navOPen, setNavOPen] = useState(false);
+  const [navBackGround, setNavBackGround] = useState(false);
+
+  useEffect(() => {
+    const navHandler = () => {
+      if (window.scrollY >= 90) setNavBackGround(true);
+      if (window.scrollY < 90) setNavBackGround(false);
+    };
+
+    window.addEventListener("scroll", navHandler);
+
+    return () => {
+      return window.removeEventListener("scroll", navHandler);
+    };
+  }, []);
+
+  console.log(navBackGround);
 
   return (
-    <header className="h-20 fixed z-20 w-full ">
+    <header
+      className={`h-20 fixed z-20 w-full transition-all duration-300 ${navBackGround ? "bg-slate-900 shadow-md" : ""}`}
+    >
       <nav className="h-full w-[90%] mx-auto flex items-center justify-between">
         <Logo />
         <DesktopNav />

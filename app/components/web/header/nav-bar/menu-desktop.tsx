@@ -7,7 +7,7 @@ export function DesktopNav() {
         <li key={menu.url}>
           <a
             href={menu.url}
-            className="text-slate-200 hover:text-blue-800 font-medium transition-colors duration-300"
+            className="text-slate-200 hover:text-blue-800 text-lg font-medium transition-colors duration-300"
           >
             {menu.label}
           </a>
