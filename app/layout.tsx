@@ -1,13 +1,8 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Fira_Code, Poppins } from "next/font/google";
 import "./globals.css";
 import { Header } from "./components/web/header/header";
-
-const popins = Poppins({
-  variable: "--font-popins",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
-});
+import { poppins } from "./data/fonts";
 
 export const metadata: Metadata = {
   title: "EdsonJGaspar",
@@ -22,7 +17,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt"
-      className={`${popins.className}  h-full antialiased bg-slate-950`}
+      className={`${poppins.className} h-full antialiased bg-slate-950`}
     >
       <body className="min-h-full flex flex-col">
         <Header />
