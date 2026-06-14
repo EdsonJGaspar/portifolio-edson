@@ -1,4 +1,6 @@
 import navLinks from "@/app/data/constants/nav-links";
+import { LinkButtom } from "../../link-buttom/link-buttom";
+import { LuDownload } from "react-icons/lu";
 
 interface MobileNavProps {
   navOpen: boolean;
@@ -24,6 +26,15 @@ export function MobileNav({ navOpen }: MobileNavProps) {
             </a>
           </li>
         ))}
+        <LinkButtom
+          href="/documents/edson-cv.pdf"
+          dwonload
+          text="Baixar CV"
+          rounded={false}
+          icon={LuDownload}
+          iconPosition="left"
+          className="mt-4"
+        />
       </ul>
     </>
   );
