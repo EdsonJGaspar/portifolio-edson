@@ -8,7 +8,7 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="h-screen relative flex justify-center items-center overflow-hidden flex-col"
+      className="h-screen bg-slate-950 shadow-lg relative flex justify-center items-center overflow-hidden flex-col"
     >
       <Galaxy
         mouseRepulsion
