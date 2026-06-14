@@ -6,8 +6,8 @@ interface LinkButtomProps {
   text: string;
   icon?: IconType;
   iconPosition?: "right" | "left";
-  rounded: boolean;
-  dwonload: boolean;
+  rounded?: boolean;
+  dwonload?: boolean;
 }
 
 export function LinkButtom({

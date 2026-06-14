@@ -23,8 +23,6 @@ export function Header() {
     };
   }, []);
 
-  console.log(navBackGround);
-
   return (
     <header
       className={`h-20 fixed z-20 w-full transition-all duration-300 ${navBackGround ? "bg-slate-900 shadow-md" : ""}`}
