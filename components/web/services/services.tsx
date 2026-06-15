@@ -30,7 +30,7 @@ const servicosPrestados = [
 
 export function Services() {
   return (
-    <section id="services">
+    <section id="services" className="px-5 md:px-0">
       <HeaderComponents title="Serviços que eu ofereço" />
       <div className="sm:w-[80%] md:w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-20">
         {servicosPrestados.map((servico) => (
