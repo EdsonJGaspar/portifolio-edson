@@ -5,6 +5,7 @@ import { ResumeSection } from "@/components/web/resume-section/resume-section";
 import { ProjectSection } from "@/components/web/projects-section/projects-section";
 import { SkillSection } from "@/components/web/skill-section/skill-section";
 import { TestimonialsSection } from "@/components/web/testimonials-section/testimanials-section";
+import { ContactSection } from "@/components/web/contact-section/contact-section";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <ProjectSection />
       <SkillSection />
       <TestimonialsSection />
+      <ContactSection />
     </div>
   );
 }
