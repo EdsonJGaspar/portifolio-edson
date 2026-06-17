@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "../components/web/header/header";
 import { poppins } from "./data/fonts";
 import { cn } from "@/lib/utils";
+import { Footer } from "@/components/web/footer/footer";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col dark">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

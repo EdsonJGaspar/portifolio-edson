@@ -1,20 +1,14 @@
 import { link } from "fs";
 import Link from "next/link";
-import {
-  FaEnvelope,
-  FaMapMarked,
-  FaMapMarkedAlt,
-  FaPhone,
-} from "react-icons/fa";
-import { FaMapLocation } from "react-icons/fa6";
+import { FaEnvelope, FaMapMarkedAlt, FaPhone } from "react-icons/fa";
 import { LuSend } from "react-icons/lu";
 
 const contactInfo = [
   {
     icon: <FaEnvelope className="w-6 h-6" />,
     title: "Email",
-    value: "contact@jhon.dev",
-    link: "mailto:contact@jhon.dev",
+    value: "edsonjoaogaspar21@gmail.com",
+    link: "mailto:edsonjoaogaspar21@gmail.com",
   },
   {
     icon: <FaPhone className="w-6 h-6" />,
