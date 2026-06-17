@@ -4,11 +4,28 @@ interface ServiceCardProps {
   icon: string;
   title: string;
   description: string;
+  //Animation
+  animate?: boolean;
+  aosType?: string;
+  aosDelay?: number;
 }
 
-export function ServiceCard({ icon, title, description }: ServiceCardProps) {
+export function ServiceCard({
+  icon,
+  title,
+  description,
+  animate = false,
+  aosType = "fade-up",
+  aosDelay = 0,
+}: ServiceCardProps) {
   return (
-    <div className="px-4 md:px-1">
+    <div
+      className="px-4 md:px-1"
+      {...(animate && {
+        "data-aos": aosType,
+        "data-aos-delay": aosDelay,
+      })}
+    >
       <Image
         src={icon}
         alt={`Imagem do serviço ${title}`}

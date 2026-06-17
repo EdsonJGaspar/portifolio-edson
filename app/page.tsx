@@ -6,10 +6,11 @@ import { ProjectSection } from "@/components/web/projects-section/projects-secti
 import { SkillSection } from "@/components/web/skill-section/skill-section";
 import { TestimonialsSection } from "@/components/web/testimonials-section/testimanials-section";
 import { ContactSection } from "@/components/web/contact-section/contact-section";
+import AnimationLayout from "./layout/animation-layout";
 
 export default function Home() {
   return (
-    <div>
+    <AnimationLayout>
       <HeroSection />
       <Services />
       <ResumeSection />
@@ -17,6 +18,6 @@ export default function Home() {
       <SkillSection />
       <TestimonialsSection />
       <ContactSection />
-    </div>
+    </AnimationLayout>
   );
 }

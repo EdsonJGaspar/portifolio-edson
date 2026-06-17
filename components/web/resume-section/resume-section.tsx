@@ -12,7 +12,11 @@ export function ResumeSection() {
   return (
     <section id="resume" className="my-12 px-5 md:px-0">
       <div className="sm:w-[80%] md:w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
-        <div>
+        <div
+          data-aos="fade-out"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <HeaderComponents title="Minha Formação" as="h2" />
           <div className="space-y-6">
             <ResumeCard
@@ -29,7 +33,11 @@ export function ResumeSection() {
             />
           </div>
         </div>
-        <div>
+        <div
+          data-aos="fade-out"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <HeaderComponents title="Minha Carreira" as="h2" />
           <div className="space-y-6 ">
             <ResumeCard
