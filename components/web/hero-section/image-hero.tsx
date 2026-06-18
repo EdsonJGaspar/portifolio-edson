@@ -8,7 +8,7 @@ export function ImageHero() {
         src={"/images/edsonjgaspar.png"}
         fill
         alt="Imagem do Edson João Gaspar"
-        className="rounded-full object-cover bg-slate-600/5"
+        className="absolute rounded-full object-cover bg-slate-600/5"
       />
     </div>
   );

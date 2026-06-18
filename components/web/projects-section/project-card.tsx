@@ -4,15 +4,27 @@ interface ProjectCardProps {
   imagePath: string;
   title: string;
   description: string;
+  //Animation
+  aosType?: string;
+  aosDuration?: Number;
+  animate?: boolean;
 }
 
 export function ProjectCard({
   imagePath,
   title,
   description,
+  aosType = "fade-up",
+  aosDuration = 0,
+  animate = false,
 }: ProjectCardProps) {
   return (
-    <div>
+    <div
+      {...(animate && {
+        "data-aos": aosType,
+        "data-aos-duration": aosDuration,
+      })}
+    >
       <Image
         src={imagePath}
         alt={`Imagen de ${title}`}
