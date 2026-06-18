@@ -28,7 +28,7 @@ export function ContactSection() {
   return (
     <section id="contact" className="py-16 md:py-32">
       <div className="w-[90%] md:w-[80%] lg:[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12">
-        <div>
+        <div data-aos="fade-up">
           <h2 className="py-3 text-3xl md:text-4xl font-bold tracking-wide text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-purple-600 text-center">
             Conatcte-me agora!
           </h2>
@@ -60,7 +60,7 @@ export function ContactSection() {
             })}
           </div>
         </div>
-        <div>
+        <div data-aos="zoom-in">
           <form className="rounded-lg bg-slate-900 px-4 py-8">
             <input
               type="text"
