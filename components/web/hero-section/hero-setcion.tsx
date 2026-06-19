@@ -10,7 +10,9 @@ export function HeroSection() {
       id="home"
       className="h-screen bg-slate-950 shadow-lg relative flex justify-center items-center overflow-hidden flex-col"
     >
-      <Galaxy
+      {/** 
+      * 
+     <Galaxy
         mouseRepulsion
         mouseInteraction
         density={1}
@@ -24,6 +26,7 @@ export function HeroSection() {
         starSpeed={0.5}
         speed={1}
       />
+     */}
 
       <div className="absolute z-10 flex flex-col items-center space-y-2">
         <ImageHero />
