@@ -48,7 +48,7 @@ export function Header() {
           {navOPen ? <LuX size={30} /> : <LuMenu size={30} />}
         </button>
 
-        <MobileNav navOpen={navOPen} />
+        <MobileNav navOpen={navOPen} setNavOPen={setNavOPen} />
       </nav>
     </header>
   );
