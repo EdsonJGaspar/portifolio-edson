@@ -10,8 +10,13 @@ interface LinkButtomProps extends ComponentProps<"a"> {
   iconPosition?: "right" | "left";
   rounded?: boolean;
   dwonload?: boolean;
-}
 
+  /** AOS Animations */
+  animate?: boolean;
+  aosType?: string;
+  aosDelay?: number;
+}
+//Animacao no componente nao esta a funcionar
 export function LinkButtom({
   href,
   text,
@@ -20,10 +25,17 @@ export function LinkButtom({
   rounded,
   dwonload = false,
   className,
+  animate = false,
+  aosType = "fade-up",
+  aosDelay = 0,
   ...props
 }: LinkButtomProps) {
   return (
     <Link
+      {...(animate && {
+        "data-aos": aosType,
+        "data-aos-delay": aosDelay,
+      })}
       href={href}
       download={dwonload}
       className={cn(
