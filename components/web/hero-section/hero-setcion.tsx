@@ -1,7 +1,9 @@
+"use client";
 import { LuArrowRight } from "react-icons/lu";
 import { LinkButtom } from "../link-buttom/link-buttom";
 import { AnimateIntro } from "./animate-intro/animate-intro";
 import { ImageHero } from "./image-hero";
+import { TituloOcupacao } from "./title-h1";
 
 export function HeroSection() {
   return (
@@ -29,13 +31,7 @@ export function HeroSection() {
 
       <div className="absolute z-10 flex flex-col items-center space-y-2">
         <ImageHero />
-        <h1
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-6 mb-2 font-bold tracking-wide text-transparent bg-clip-text bg-linear-to-r from-blue-500 to-purple-600 pb-1.5"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
-          Engenheiro Informático
-        </h1>
+        <TituloOcupacao />
         <AnimateIntro />
         <LinkButtom
           href="#projects"
