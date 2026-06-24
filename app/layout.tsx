@@ -5,6 +5,7 @@ import { Header } from "../components/web/header/header";
 import { poppins } from "./data/fonts";
 import { cn } from "@/lib/utils";
 import { Footer } from "@/components/web/footer/footer";
+import { ButtonScrollUp } from "@/components/web/button-scroll-up/button-up";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
       className={cn(
         "h-full",
         "antialiased",
+        "scroll-smooth",
         poppins.className,
         "font-sans",
         geist.variable,
@@ -33,6 +35,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <ButtonScrollUp />
       </body>
     </html>
   );

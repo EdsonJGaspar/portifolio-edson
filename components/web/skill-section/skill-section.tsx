@@ -23,7 +23,7 @@ export function SkillSection() {
             key={skill.name}
             data-aos="flip-right"
             data-aos-delay={index * 100}
-            className="bg-slate-900 text-blue-100 text-center w-40 h-40 rounded-3xl flex flex-col items-center justify-center shadow-lg transition-transform duration-300 hover:scale-110"
+            className="bg-slate-900 text-blue-100 text-center w-40 h-40 rounded-3xl flex flex-col items-center justify-center shadow-lg transition-transform duration-100 hover:scale-110"
           >
             <div className="text-5xl text-blue-200">{skill.icon}</div>
             <p className="text-lg md:text-xl my-4 text-blue-200">
