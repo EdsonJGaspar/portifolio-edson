@@ -1,4 +1,4 @@
-import { Fira_Code, Inter, Poppins, Roboto_Mono } from "next/font/google";
+import { Fira_Code, Poppins } from "next/font/google";
 
 export const poppins = Poppins({
   variable: "--font-popins",

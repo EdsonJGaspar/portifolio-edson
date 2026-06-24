@@ -2,7 +2,6 @@ import { LuArrowRight } from "react-icons/lu";
 import { LinkButtom } from "../link-buttom/link-buttom";
 import { AnimateIntro } from "./animate-intro/animate-intro";
 import { ImageHero } from "./image-hero";
-import Galaxy from "@/components/Galaxy";
 
 export function HeroSection() {
   return (

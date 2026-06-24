@@ -8,7 +8,7 @@ interface ResumeCardProps {
 
   //Animation
   aosType?: string;
-  aosDuration?: Number;
+  aosDuration?: number;
   animate?: boolean;
 }
 

@@ -1,6 +1,5 @@
 "use client";
 
-import { link } from "fs";
 import Link from "next/link";
 import { useState } from "react";
 import toast from "react-hot-toast";
@@ -30,7 +29,7 @@ const contactInfo = [
 
 export function ContactSection() {
   const [loanding, setLoading] = useState(false);
-  const [result, setResult] = useState("");
+  const [, setResult] = useState("");
 
   const onSubmit = async (event: React.SubmitEvent) => {
     setLoading(true);
