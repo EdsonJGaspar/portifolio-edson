@@ -1,5 +1,6 @@
 "use client";
 
+import ElectricBorder from "@/components/ElectricBorder";
 import Link from "next/link";
 import { useState } from "react";
 import toast from "react-hot-toast";
@@ -102,44 +103,51 @@ export function ContactSection() {
             })}
           </div>
         </div>
-        <div data-aos="zoom-in" className="bg-slate-700/15">
-          <form onSubmit={onSubmit} className="px-4 py-8">
-            <input
-              type="text"
-              className="px-4 py-3.5 my-4 bg-slate-800 outline-none rounded-md w-full text-blue-50 placeholder-slate-600"
-              placeholder="Seu nome"
-              name="name"
-              required
-            />
-            <input
-              type="email"
-              className="px-4 py-3.5 my-4 bg-slate-800 outline-none rounded-md w-full text-blue-50 placeholder-slate-600"
-              placeholder="Seu email"
-              required
-              name="email"
-            />
-            <textarea
-              className="px-4 py-3.5 my-4 bg-slate-800 outline-none rounded-md w-full text-blue-50 placeholder-slate-600 resize-none"
-              rows={5}
-              placeholder="Qual é o serviço ou projecto?"
-              required
-              name="message"
-            />
-            <button className="w-full bg-linear-to-r from-blue-500 to-purple-700 hover:from-blue-600 hover:to-purple-800 text-blue-50 font-semibold py-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer disabled:cursor-not-allowed disabled:opacity-70">
-              {loanding ? (
-                <>
-                  <span className="w-6 h-6 border-4 border-white/30 border-t-white rounded-full animate-spin"></span>
-                  Enviando...
-                </>
-              ) : (
-                <>
-                  <LuSend size={20} />
-                  Enviar mensagem
-                </>
-              )}
-            </button>
-          </form>
-        </div>
+        <ElectricBorder
+          color="#62748e"
+          speed={1}
+          chaos={0.12}
+          style={{ borderRadius: 16 }}
+        >
+          <div data-aos="zoom-in" className="bg-slate-700/15">
+            <form onSubmit={onSubmit} className="px-4 py-8">
+              <input
+                type="text"
+                className="px-4 py-3.5 my-4 bg-slate-800 outline-none rounded-md w-full text-blue-50 placeholder-slate-600 border-0 hover:border-b-slate-400 hover:border-b-2"
+                placeholder="Seu nome"
+                name="name"
+                required
+              />
+              <input
+                type="email"
+                className="px-4 py-3.5 my-4 bg-slate-800 outline-none rounded-md w-full text-blue-50 placeholder-slate-600 border-0 hover:border-b-slate-400 hover:border-b-2"
+                placeholder="Seu email"
+                required
+                name="email"
+              />
+              <textarea
+                className="px-4 py-3.5 my-4 bg-slate-800 outline-none rounded-md w-full text-blue-50 placeholder-slate-600 resize-none border-0 hover:border-b-slate-400 hover:border-b-2"
+                rows={5}
+                placeholder="Qual é o serviço ou projecto?"
+                required
+                name="message"
+              />
+              <button className="w-full bg-linear-to-r from-blue-500 to-purple-700 hover:from-blue-600 hover:to-purple-800 text-blue-50 font-semibold py-4 rounded-lg transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer disabled:cursor-not-allowed disabled:opacity-70">
+                {loanding ? (
+                  <>
+                    <span className="w-6 h-6 border-4 border-white/30 border-t-white rounded-full animate-spin"></span>
+                    Enviando...
+                  </>
+                ) : (
+                  <>
+                    <LuSend size={20} />
+                    Enviar mensagem
+                  </>
+                )}
+              </button>
+            </form>
+          </div>
+        </ElectricBorder>
       </div>
     </section>
   );
